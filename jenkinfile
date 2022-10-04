@@ -5,16 +5,19 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+                git branch: 'main', url: 'https://github.com/chahardivya/jenkinpipeline.git'
             }
         }
         stage('build') {
             steps {
                 echo 'Hello World'
+                git branch: 'main', url: 'https://github.com/chahardivya/jenkinpipeline.git'
             }
         }
         stage('deploying') {
             steps {
                 echo 'Hello World'
+                git branch: 'main', url: 'https://github.com/chahardivya/jenkinpipeline.git'
             }
         }
     }
